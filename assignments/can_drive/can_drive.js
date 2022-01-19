@@ -1,9 +1,9 @@
 function CanDrive(hasDrivingLiscence, isTired, isSober) {
     // Write you code here
-    if(hasDrivingLiscence == false){
+    if(!hasDrivingLiscence){
         return "You cannot drive"
     }
-    if(isTired == true || isSober == false){
+    if (isTired || !isSober){
         return "You shouldn't drive"
     }
     return "You can drive"
