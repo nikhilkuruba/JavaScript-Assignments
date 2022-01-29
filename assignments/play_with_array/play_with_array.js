@@ -7,7 +7,9 @@ function getEven(arr) {
 
         Write you code below
     */
-
+    //var even_arr = arr.filter(num => num%2 === 0);
+    //return even_arr
+    return arr.filter(num => num%2 === 0)
 }
 
 function multiplyByN(arr, n) {
@@ -18,6 +20,9 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+    //var new_arr = arr.map(num => num = num*n);
+    //return new_arr
+    return arr.map(num => num*n)
 }
 
 function removeNthElement(arr, n) {
@@ -28,6 +33,8 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
+    arr.splice(n,1)
+    return arr
 }
 
 module.exports = {
