@@ -32,7 +32,7 @@ function getTodoApi(){
         todoList.appendChild(para);
       }}); 
     }
-    else if(selector.value == "pending"){
+    else if(selector.value=="pending"){
       todoList.innerText = ""
     data.forEach(item => {
       if(item.completed == false){
@@ -41,6 +41,5 @@ function getTodoApi(){
         todoList.appendChild(para);
       }}); 
     }
-
   })
 }
